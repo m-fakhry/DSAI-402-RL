@@ -76,7 +76,7 @@ layout: top-title
   q(s_t, a_t) = q(s_t, a_t) + \alpha \left[ R_{t+1} + \gamma q(s_{t+1}, a_{t+1}) - q(s_t, a_t) \right]
   $$
 
-  *at state $s_t$, [take action]{.decoration-4.underline.decoration-pink-500} $a_t$ (using the $\epsilon$-greedy policy), observe reward $R_{t+1}$, move to next state $s_{t+1}$, and [choose action]{.decoration-4.underline.decoration-pink-500} $a_{t+1}$*
+  *at state $s_t$, [take action]{.decoration-4.underline.decoration-pink-500} $a_t$, observe reward $R_{t+1}$, move to next state $s_{t+1}$, and [choose action]{.decoration-4.underline.decoration-pink-500} $a_{t+1}$ (using the $\epsilon$-greedy policy)*
 
 - State, Action, Reward, State, Action (SARSA)
 
