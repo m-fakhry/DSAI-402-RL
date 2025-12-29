@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Learning Tool</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reinforcement Learning Playground</h1>
+            <p class="subtitle">Interactive tool for exploring RL algorithms</p>
+        </header>
+
+        <div class="main-layout">
+            <!-- Left Panel: Controls -->
+            <div class="controls-panel">
+                <div class="control-section">
+                    <h3>Environment</h3>
+                    <select id="environment-select">
+                        <option value="">Loading environments...</option>
+                    </select>
+                </div>
+
+                <div class="control-section">
+                    <h3>Algorithm</h3>
+                    <select id="algorithm-select">
+                        <option value="">Loading algorithms...</option>
+                    </select>
+                </div>
+
+                <div class="control-section">
+                    <h3>Parameters</h3>
+                    
+                    <div class="param-group">
+                        <label for="gamma">Discount Factor (γ): <span id="gamma-value">0.99</span></label>
+                        <input type="range" id="gamma" min="0" max="1" step="0.01" value="0.99">
+                    </div>
+
+                    <div class="param-group">
+                        <label for="alpha">Learning Rate (α): <span id="alpha-value">0.1</span></label>
+                        <input type="range" id="alpha" min="0.01" max="1" step="0.01" value="0.1">
+                    </div>
+
+                    <div class="param-group">
+                        <label for="epsilon">Epsilon (ε): <span id="epsilon-value">0.1</span></label>
+                        <input type="range" id="epsilon" min="0" max="1" step="0.01" value="0.1">
+                    </div>
+
+                    <div class="param-group">
+                        <label for="episodes">Episodes: <span id="episodes-value">1000</span></label>
+                        <input type="range" id="episodes" min="100" max="10000" step="100" value="1000">
+                    </div>
+
+                    <div class="param-group" id="mc-type-group" style="display: none;">
+                        <label for="mc-type">MC Type:</label>
+                        <select id="mc-type">
+                            <option value="first_visit">First Visit</option>
+                            <option value="every_visit">Every Visit</option>
+                            <option value="exploring_starts">Exploring Starts</option>
+                            <option value="epsilon_greedy">Epsilon Greedy</option>
+                        </select>
+                    </div>
+
+                    <div class="param-group" id="nstep-group" style="display: none;">
+                        <label for="nsteps">N Steps: <span id="nsteps-value">3</span></label>
+                        <input type="range" id="nsteps" min="1" max="10" step="1" value="3">
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <button id="train-btn" class="btn btn-primary">Train Agent</button>
+                    <button id="test-btn" class="btn btn-secondary" disabled>Test Agent</button>
+                    <button id="reset-btn" class="btn btn-secondary">Reset</button>
+                </div>
+
+                <div class="status-box">
+                    <p id="status-text">Select environment and algorithm to begin</p>
+                </div>
+            </div>
+
+            <!-- Right Panel: Visualization -->
+            <div class="visualization-panel">
+                <div class="viz-section">
+                    <h3>Environment Visualization</h3>
+                    <div id="env-canvas-container">
+                        <canvas id="env-canvas" width="600" height="600"></canvas>
+                    </div>
+                </div>
+
+                <div class="viz-section">
+                    <h3>Value Function Heatmap</h3>
+                    <div id="value-heatmap"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Charts -->
+        <div class="charts-container">
+            <div class="chart-box">
+                <h3>Episode Rewards</h3>
+                <div id="reward-chart"></div>
+            </div>
+
+            <div class="chart-box">
+                <h3>Episode Lengths</h3>
+                <div id="length-chart"></div>
+            </div>
+
+            <div class="chart-box">
+                <h3>Convergence</h3>
+                <div id="convergence-chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/visualization.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
