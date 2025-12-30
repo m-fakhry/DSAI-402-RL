@@ -1,6 +1,0 @@
-streamlit
-pandas
-numpy
-gymnasium
-pygame
-random

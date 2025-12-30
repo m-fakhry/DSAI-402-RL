@@ -1,8 +1,0 @@
-numpy==2.3.5
-scipy==1.16.3
-flask==3.1.2
-flask-cors==6.0.1
-flask-socketio==5.3.6
-matplotlib==3.10.8
-gymnasium==1.2.2
-pytest==9.0.2

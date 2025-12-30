@@ -1,4 +1,0 @@
-gymnasium == 0.29.1
-numpy == 1.24.3
-streamlit >= 1.28.0
-matplotlib >= 3.7.0
