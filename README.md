@@ -9,8 +9,8 @@ Repository for the RL undergraduate course (DSAI 402) for the 2025-2026 academic
 Course | Reinforcement Learning - DSAI 402
 ---|----
 Webpage| [https://github.com/m-fakhry/DSAI-402-RL](https://github.com/m-fakhry/DSAI-402-RL)
-Structure | 2-hour lecture (Mon 8-10) and 3-hour lab (Sun 10-1, 1-4, Tue 10-1, 1-4, Wed 1-4)
-TAs | Mohamed Talaat, Osama Ghandour, Yousef Elbaz (Alphabetical order)
+Structure | 2-hour lecture (Tue 10-12) and 3-hour lab (Sun 8-11, Thu 11-2)
+TAs | Mohamed Talaat
 Grades | (final), (midterm and quizzes), (lab)
 Lab Policy| Assignments and quizzes
 Book | "_Reinforcement Learning, an Introduction_", Sutton and Barto, 2nd Edition, 2018
@@ -25,30 +25,21 @@ Tools/APIs |  [Gymnasium](https://gymnasium.farama.org/)
 
 Week| Date |Topic | Contents | Lecture | Assignment
 ---|---|---|---|---|---
-1| 09-22 | ~~Intro~~| Cancelled |  | 
-2| 09-29 | RL Basics | Introduction, what is RL, action, reward, environment, Markov process  | [Lecture 1](lectures/lec1.md) | [Assignment 1](assignments/assign1.md)
-3| 10-06 | MRP | Markov reward process| [Lecture 2](lectures/lec2.md) | [Assignment 2](assignments/assign2.md)
-4| 10-13 | MDP | Markov decision process, value functions, policy, Bellman equations | [Lecture 3](lectures/lec3.md) | [Assignment 3](assignments/assign3.md)
-5| 10-20 | Dynamic programming | Policy evaluation, policy improvement, policy iteration | [Lecture 4](lectures/lec4.md) | [Assignment 4](assignments/assign4.md)
-6| 10-27 | Model-free | value iteration, model-free | [Lecture 5](lectures/lec5.md) | No assignment, prepare for lab quiz
-7| 11-3 | Model-free | Lab Quiz, Monte Carlo, prediction, first and every visit, q value estimation | [Lecture 6](lectures/lec6.md) | No assignment to prepare for midterm exam
-8| 11-10 | Midterm | | | 
-9| 11-17 | Model-free | Exploring start, $\epsilon$-greedy MC, Temporal difference learning | [Lecture 7](lectures/lec7.md) | [Assignment 5](assignments/assign5.md)
-10| 11-24 | ~~Cancelled~~ |  | | [Assignment 6](assignments/assign6.md) 
-11| 12-1 | TD | TD(0), n-step TD, effect of $n$ and $\alpha$, Sarsa | [Lecture 8](lectures/lec8.md) | [Assignment 7](assignments/assign7.md) 
-12| 12-8 | QL | SARSA, Q-Learning | [Lecture 9](lectures/lec9.md) | prepare for LAB QUIZ
-13| 12-15 | Deep QL | Deep Q-Learning | [Lecture 10](lectures/lec10.md) | LAB QUIZ
-14| 12-22 | Applications | Applications of RL  | [Lecture 11](lectures/lec11.md) | 
-15| 12-29 | ~~Cancelled~~ |  |  | FINAL LAB
-16| | Final | | | 
-
-<!--
-13| 12-15 | LAB QUIZ, Policy Gradient | Deep Q-Learning, Extensions (Dueling QL), Policy gradient, policy representation | [Lecture XX] | Assignment on SARSA vs QLearning
-14| 12-22 | Policy Gradient | REINFORCE and its issues | [Lecture XX] | No assignment, prepare for final lab
-15| 12-29 | FINAL LAB, Actor-Critic method | Actor-Critic, architecture, shared network | [Lecture XX] | No assignment
-16| | LLM and RL | Chatbot training with RL | [Lecture XX] | No assignment
-17| | Final | | | 
--->
+1| 02-10 | | | | 
+2| 02-17 | RL Basics | Introduction, what is RL, Markov process, Markov reward process, Markov decision process | [Lecture 1](lectures/lec1.md) | [Assignment 1](assignments/assign1.md) 
+3| 02-24 | | | | 
+4| 03-03 | | | | 
+5| 03-10 | | | | 
+6| 03-17 | | | | 
+7| 03-24 | Eid? | | | 
+8| 03-31 | Midterm? | | | 
+9| 04-07 | | | | 
+10| 04-14 | | | | 
+11| 04-21 | | | | 
+12| 04-28 | | | | 
+13| 05-05 | | | | 
+14| 05-12 | | | | 
+15| 05-19 | Prepare for Final | | | 
 
 Please note that the syllabus content is subject to change throughout the semester. Topics may be added or removed based on the instructor’s discretion, student progress, and available time. Your feedback and participation will inform these adjustments to ensure alignment with course goals and schedule constraints.
 
@@ -58,8 +49,9 @@ Please note that the syllabus content is subject to change throughout the semest
 
 Topic| Percentage | Notes
 ---|---|---
-Lab Assignments | 20% | 
-Lab Quizzes | 10% | 
+Lab Assignments | 15% | 
+Lab Quizzes | 5% | 
+Lecture Quizzes | 10% | 
 Final Lab | 10% | 
 Midterm | 20% | 
 Final | 40% | 
