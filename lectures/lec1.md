@@ -3,23 +3,34 @@ theme: neversink
 background: RL-bg.png
 class: 'text-center'
 transition: slide-left
-title: Reinforcement Learning (DSAI 402)
+title: RL (DSAI 402)
 author: Mohamed Ghalwash
-year: 2025-2026
+year: Spring 2025-2026
 venue: Zewail City
 mdc: true
+lecture: 1
+slide:
+  disableSlideNumbers: true
+slide_info: false
 ---
 
-# Reinforcement Learning <br> (DSAI 402)
+# Reinforcement Learning <br> (Spring DSAI 402)
 ## Lecture 1
 
 Mohamed Ghalwash
 <Email v="mghalwash@zewailcity.edu.eg" />
 
 ---
+layout: fact
+---
+
+# Recording is NOT allowed 
+
+
+---
 transition: fade-out
 layout: image-right
-image: images/RL-bg.png
+image: images/1_rl_bg.png
 ---
 
 # What is Reinforcement Learning?
@@ -28,11 +39,10 @@ image: images/RL-bg.png
 - Machine learning vs RL 
 - Supervised vs Unsupervised learning 
 
-<BottomBar/>
 
 ---
 layout: image-right
-image: images/mouse_maze.png
+image: images/1_mouse_maze.png
 ---
 
 **Robot mouse maze world**
@@ -48,7 +58,6 @@ image: images/mouse_maze.png
 
 </v-clicks>
 
-<BottomBar/>
 
 ---
 layout: fact
@@ -56,13 +65,13 @@ layout: fact
 
 ## The agent’s ultimate goal is to maximize its total accumulated reward
 
-<BottomBar/>
 
 ---
 layout: top-title
 ---
 :: title :: 
-RL Objectives 
+
+# RL Objectives 
 
 :: content :: 
 
@@ -76,7 +85,6 @@ RL Objectives
 - Exploit and Explore 
 - Delay between reward and action 
 
-<BottomBar/>
 
 ---
 layout: side-title
@@ -111,13 +119,13 @@ linkStyle 2 stroke:#333,stroke-width:2px,color:blue;
 
 the term reinforcement comes from the fact that a reward obtained by an agent should reinforce its behavior in a positive or negative way -->
 
-<BottomBar/>
 ---
 layout: top-title 
 ---
+
 :: title :: 
 
-Markov (Reward) Process 
+# Markov (Reward) Process 
 
 :: content :: 
 
@@ -130,7 +138,55 @@ Markov (Reward) Process
   - reward $G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \ldots$
   - value $V(s) = E(G | S_t = s)$
 
-<BottomBar/>
+---
+layout: top-title
+# image: images/mouse_maze.png
+---
+
+:: title :: 
+
+# Markov Process 
+
+:: content :: 
+
+- States 
+- Transition matrix $P$
+- Markov Property: $P(S_t|S_{t-1},S_{t-2},\ldots,S_1) = P(S_t|S_{t-1})$
+
+<br><br>
+Examples:
+
+- Weather `S R S S S R R R S R `
+
+- Currency Exchange Rate 
+  
+<br><br>
+
+What does it mean $P^2$? 
+  
+
+---
+layout: top-title
+# image: images/mouse_maze.png
+---
+
+:: title :: 
+
+# Markov Reward Process 
+
+:: content :: 
+
+- States: $S$
+- Transition matrix: $P$ _source $\rightarrow$ target_
+- Accumulated Reward: $G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \ldots$
+- Markov property: $P(R_t, S_t|S_{t-1},S_{t-2},\ldots,S_1) = P(R_t, S_t|S_{t-1})$
+- Value function: $V(s) = E(G | S_t = s)$
+
+<br><br><br>
+Examples 
+- Cat moving through rooms 
+
+
 ---
 layout: center
 class: text-center
