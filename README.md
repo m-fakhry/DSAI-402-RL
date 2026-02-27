@@ -27,7 +27,7 @@ Week| Date |Topic | Contents | Lecture | Assignment
 ---|---|---|---|---|---
 1| 02-10 | | | | 
 2| 02-17 | RL Basics | Introduction, what is RL, Markov process, Markov reward process, Markov decision process | [Lecture 1](lectures/lec1.md) | [Assignment 1](assignments/assign1.md) 
-3| 02-24 | | | | 
+3| 02-24 | MDP | Markov reward process, Markov decision process, value functions, policy, Bellman equations | [Lecture 2](lectures/lec2.md) | [Assignment 1](assignments/assign2.md) 
 4| 03-03 | | | | 
 5| 03-10 | | | | 
 6| 03-17 | | | | 
