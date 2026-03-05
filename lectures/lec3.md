@@ -32,6 +32,11 @@ class: ns-c-center-item
 
 :: content :: 
 
+- MDP 
+- Bellman Equations 
+- Optimal Policy 
+  
+  
 ---
 layout: top-title
 ---
@@ -92,8 +97,6 @@ flowchart TD
 </div>
 
 
-<BottomBar/>
-
 ---
 layout: top-title
 ---
@@ -147,7 +150,6 @@ Which policy is the optimal one?
 
 </v-click> 
 
-<BottomBar/>
 
 ---
 layout: top-title
@@ -185,7 +187,6 @@ flowchart TD
 
 
 
-<BottomBar/>
 
 ---
 layout: section
@@ -193,7 +194,6 @@ layout: section
 
 # Dynamic Programming 
 
-<BottomBar/>
 
 ---
 layout: top-title 
@@ -235,108 +235,6 @@ $v_\pi(s) = \sum_a \pi(a|s) \sum_{s^\prime} p(s^\prime|s,a) \left[ r(s,a,s^\prim
 </SpeechBubble>
 
 
-<BottomBar/>
-
----
-layout: top-title-two-cols
-columns: is-8
-align: l-lt-lm
----
-
-:: title :: 
-
-# Policy Improvement
-
-:: left :: 
-
-- For ==some state $s$== we would like to know whether or not we should change the policy to deterministically choose an action ==$a\neq \pi(s)$==
-<!-- - Consider selecting $a \neq \pi(s)$ and thereafter following the existing policy $\pi$. -->
-
-$$
-{all}
-\begin{array}{ll}
-q_\pi(s, a) 
-         & =  \mathbb{E}_\pi \left[ R_{t+1} + \gamma v_\pi(s^\prime) \mid s, a \right] \\ \\
-         & = \sum_{s^\prime} p(s^\prime|s,a) \left[ r(s,a,s^\prime) + \gamma v_\pi(s^\prime) \right]
-\end{array}
-$$
-
-<!-- - if $q_\pi(s, a) > v_\pi(s)$ then it is better to select $a$ once in $s$ and thereafter follow $\pi$ -->
-
-- $q_\pi(s, \pi^\prime(s)) > v_\pi(s) \;\; \Rightarrow \;\; v_{\pi^\prime} (s) \geq v_\pi(s)$
-
-<!-- - Let $\pi$ and $\pi^\prime$ be any pair of deterministic policies such that -->
-
-<!-- $$q_\pi(s, \pi^\prime(s)) \geq  v_\pi(s), \;\;\;\;\;\;\; s.t. \;\;\; \pi^\prime(s) \neq \pi(s) \text{ for some }s $$ -->
-
-
-
-$\Rightarrow$ the policy $\pi^\prime$ must be as good as or better than $\pi$ 
-
-- Then we can obtain a new policy as 
-  
-$$
-\pi^\prime(s) \triangleq \underset{a}{\mathop{\mathrm{argmax}}} \;\; q_\pi(s, a)
-$$
-
-:: right :: 
-
-```python {1|2|3|4,5,6,7|8,9|all}
-function policy_improvement() {
-    for s in env.states:
-        old_action = policy[s]
-        for a in policy[s]:
-            q[a] = 0 
-            for s_ , r, prob in env.transitions(s, a):
-                q[a] +=  prob * (r + gamma * v[s_])
-        new_action = argmax(q)
-        policy[s] = a
-    return policy
-}
-```
-
-<BottomBar/>
-
----
-layout: top-title 
----
-:: title :: 
-
-# Policy Iteration  
-
-:: content :: 
-
-- Computes an optimal by performing a sequence of interleaved policy evaluations and improvements
-  
-
-```python
-function policy_iteration() {
-    random policy 
-    random v
-    while True: 
-      policy_evaluation() # compute v for each s
-      policy_improvement() # choose best action for each s
-}
-```
-
-<BottomBar/>
-
-
----
-layout: top-title
----
-
-:: title :: 
-
-# Example $4\times 4$ grid world
-
-:: content :: 
-
-- Undiscounted and episodic task (shaded boxes are terminals)
-
-![alt text](./images/lec4_grid_world.png)
-
-<BottomBar/>
 
 ---
 layout: top-title-two-cols
@@ -349,14 +247,21 @@ align: l-lm-lb
 
 :: left :: 
 
-![alt text](./images/lec4_iterative_policy_1.png){width=100%}
+![alt text](./images/3_iterative_policy_1.png){width=100%}
 
 :: right :: 
 
 <v-click>
 
-![alt text](./images/lec4_iterative_policy_2.png){width=100%}
+![alt text](./images/3_iterative_policy_2.png){width=100%}
 
 </v-click>
 
-<BottomBar/>
+---
+layout: center
+class: text-center
+---
+
+# Learn More
+
+[Course Homepage](https://github.com/m-fakhry/DSAI-402-RL)
