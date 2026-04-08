@@ -103,9 +103,7 @@ Returns = defaultdict(list)  # stores returns for each state
 for episode in range(num_episodes):
     start_state = random.choice(all_states)           # Exploring start state
     start_action = random.choice(actions_for(start_state))  # Exploring start action
-    
     episode_data = generate_episode(...)
-
     G = 0  # return
     # Calculate the return G for each state in episode backwards
     for t in reversed(range(len(episode_data))):
@@ -131,15 +129,13 @@ layout: top-title
   Instead of randomizing the **initial** state-action for each episode, $\epsilon$-greedy MC incorporates exploration during the episode by selecting **at each step** a random action with probability $\epsilon$ and the greedy action otherwise
 
 
-```python{0|3,7,17|all}
+```python{0|3,6,15|all}
 V = defaultdict(float)
 Returns = defaultdict(list)  # stores returns for each state
 Initialize an arbitrary policy 
-
 # Loop over all episodes
 for episode in range(num_episodes):    
     episode_data = generate_episode(epsilon, ...)
-
     G = 0  # return
     # Calculate the return G for each state in episode backwards
     for t in reversed(range(len(episode_data))):
