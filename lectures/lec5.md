@@ -28,7 +28,7 @@ class: ns-c-center-item
 
 :: title :: 
 
-# Lecture 3 Recap
+# Lecture 4 Recap
 
 :: content :: 
 

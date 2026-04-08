@@ -30,11 +30,11 @@ Week| Date |Topic | Contents | Lecture | Assignment
 3| 02-24 | MDP | Markov reward process, Markov decision process, value functions, policy, Bellman equations | [Lecture 2](lectures/lec2.md) | [Assignment 2](assignments/assign2.md) 
 4| 03-03 | Dynamic Programming | Optimal policy, policy evaluation | [Lecture 3](lectures/lec3.md) | No assignment
 5| 03-10 | Dynamic Programming | Policy evaluation , policy improvement, policy iteration, value iteration | [Lecture 4](lectures/lec4.md) | [Assignment 3](assignments/assign3.md) 
-6| 03-17 | Model-free | Monte carlo, first visit, every visit | [Lecture 5](lectures/lec5.md) | No assignment
+6| 03-17 | Model-free | Monte carlo, first visit, every visit | [Lecture 5](lectures/lec5.md) | [Assignment 4](assignments/assign4.md)
 7| 03-24 | Eid | | | 
 8| 03-31 | Midterm | | | 
-9| 04-07 | | | | 
-10| 04-14 | | | | 
+9| 04-07 | Model-free | exploring starts, $\epsilon$-greedy MC | [Lecture 6](lectures/lec6.md)  | [Assignment 5](assignments/assign5.md)
+10| 04-14 | Quiz | | | 
 11| 04-21 | | | | 
 12| 04-28 | | | | 
 13| 05-05 | | | | 
