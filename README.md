@@ -34,8 +34,8 @@ Week| Date |Topic | Contents | Lecture | Assignment
 7| 03-24 | Eid | | | 
 8| 03-31 | Midterm | | | 
 9| 04-07 | Model-free | exploring starts, $\epsilon$-greedy MC | [Lecture 6](lectures/lec6.md)  | [Assignment 5](assignments/assign5.md)
-10| 04-14 | TD | | | 
-11| 04-21 | SARSA + QLearining| | | 
+10| 04-14 | TD | Temporal Difference, $n$-step algorithm, performance of model-free algorithms | [Lecture 7](lectures/lec7.md)  | [Assignment 6](assignments/assign6.md)
+11| 04-21 | SARSA + QLearning| | | 
 12| 04-28 | DQL + Quiz | | | 
 13| 05-05 | Application + Lab Quiz | | | 
 14| 05-12 | Final Lab | | | 
