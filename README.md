@@ -35,8 +35,8 @@ Week| Date |Topic | Contents | Lecture | Assignment
 8| 03-31 | Midterm | | | 
 9| 04-07 | Model-free | exploring starts, $\epsilon$-greedy MC | [Lecture 6](lectures/lec6.md)  | [Assignment 5](assignments/assign5.md)
 10| 04-14 | TD | Temporal Difference, $n$-step algorithm, performance of model-free algorithms | [Lecture 7](lectures/lec7.md)  | [Assignment 6](assignments/assign6.md)
-11| 04-21 | SARSA + QLearning| | | 
-12| 04-28 | DQL + Quiz | | | 
+11| 04-21 | SARSA + QLearning| SARSA (Abdulrahman Elattar), QLearning (Asmaa Desoky), difference between on-policy and off-policy | [Lecture 8](lectures/lec8.md)  | [Assignment 7](assignments/assign7.md)
+12| 04-28 | DQL + Quiz | Basel? | | 
 13| 05-05 | Application + Lab Quiz | | | 
 14| 05-12 | Final Lab | | | 
 15| 05-19 | Prepare for Final | | | 
