@@ -36,9 +36,9 @@ Week| Date |Topic | Contents | Lecture | Assignment
 9| 04-07 | Model-free | exploring starts, $\epsilon$-greedy MC | [Lecture 6](lectures/lec6.md)  | [Assignment 5](assignments/assign5.md)
 10| 04-14 | TD | Temporal Difference, $n$-step algorithm, performance of model-free algorithms | [Lecture 7](lectures/lec7.md)  | [Assignment 6](assignments/assign6.md)
 11| 04-21 | SARSA + QLearning| SARSA (Abdulrahman Elattar), QLearning (Asmaa Desoky), difference between on-policy and off-policy | [Lecture 8](lectures/lec8.md)  | [Assignment 7](assignments/assign7.md)
-12| 04-28 | DQL + Quiz | Basel? | | 
-13| 05-05 | Application + Lab Quiz | | | 
-14| 05-12 | Final Lab | | | 
+12| 04-28 | DQL + Quiz | Deep Q-Learning | [Lecture 9](lectures/lec9.md) | Quiz
+13| 05-05 | Lab Quiz | lab quiz | | 
+14| 05-12 | Final Lab | final lab in the lecture | | 
 15| 05-19 | Prepare for Final | | | 
 
 Please note that the syllabus content is subject to change throughout the semester. Topics may be added or removed based on the instructor’s discretion, student progress, and available time. Your feedback and participation will inform these adjustments to ensure alignment with course goals and schedule constraints.
