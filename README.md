@@ -53,7 +53,7 @@ Please note that the syllabus content is subject to change throughout the semest
 
 Week| Date |Topic | Contents | Application Paper | CLO | Lecture | Assignment
 ---|---|---|---|---|---|---|---
-1 | 09-21 | Why RL | Deployed RL systems across domains, sequential vs supervised learning, course project tracks | Survey of deployed systems | 1 |  | 
+1 | 09-21 | Why RL | Deployed RL systems across domains, sequential vs supervised learning, course project tracks | [Survey of deployed systems](https://github.com/VincentLiu3/real-world-RL-deployment) | 1 | [L1: Why RL](lectures/lecture1.md)  | [Assignment 1](assignments/assignment1.md)
 2 | 09-28 | RL Basics | Agent, environment, action, reward, return, discounting, Markov process | [A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/pdf/1003.0146) (2012) — _business_ | 1, 2, 6 |  | 
 3 | 10-05 | MDP | Markov decision process, policy, value functions, Bellman equations | [A Graph Placement Methodology for Fast Chip Design](https://www.nature.com/articles/s41586-021-03544-w) (2021) — _nanotechnology, EE_ — _read the formulation only, not the algorithm_ | 2, 3, 6 |  | 
 4 | 10-12 | Dynamic Programming | Policy evaluation, policy improvement, policy iteration, value iteration | [The Artificial Intelligence Clinician Learns Optimal Treatment Strategies for Sepsis in Intensive Care](https://www.nature.com/articles/s41591-018-0213-5) (2018) — _healthcare_ | 3, 6 |  | **Project proposal + mentor agreement**
