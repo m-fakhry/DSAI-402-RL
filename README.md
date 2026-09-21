@@ -107,9 +107,9 @@ Topic| Percentage | Notes
 Lab Assignments | 15% | 8 assignments
 Paper Responses | 5% | For the assigned papers
 Lab Quizzes | 10% | Weeks 7 and 11
-Class Project | 25% | Distributed across the four milestones
-Midterm | 15% |
-Final | 30% |
+Class Project | 20% | Distributed across the four milestones
+Midterm | 10% |
+Final | 40% |
 
 ---
 

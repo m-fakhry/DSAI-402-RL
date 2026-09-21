@@ -179,7 +179,7 @@ title: When not to use RL
 
 :: content ::
 
-Knowing when not to use a method is part of knowing the method. It is also worth marks in this course.
+Knowing when not to use a method is part of knowing the method. 
 
 <v-clicks>
 
