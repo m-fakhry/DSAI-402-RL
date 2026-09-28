@@ -214,4 +214,6 @@ __marimo__/
 lectures/.DS_Store
 code/
 lectures/node_modules/
+node_modules/
+*.json
  
