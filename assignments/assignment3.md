@@ -1,3 +1,8 @@
+# Assignment 3
+
+Graded. 
+
+
 1. Read Sutton and Barto, Chapter 3, and start Chapter 4.
 2. Write a short response to the chip floorplanning paper, for its formulation only.
 3. Implementation : Hanoi Tower Problem

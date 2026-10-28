@@ -57,18 +57,19 @@ Week| Date |Topic | Contents | Application Paper | CLO | Lecture | Assignment
 2 | 09-28 | RL Basics | Agent, environment, action, reward, return, discounting, Markov process | [A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/pdf/1003.0146) (2012) — _business_ | 1, 2, 6 |  [L2: RL Basics](lectures/lecture2.md)  | [Assignment 1](assignments/assignment2.md)
 3 | 10-05 | MDP | Markov decision process, policy, value functions, Bellman equations | [A Graph Placement Methodology for Fast Chip Design](https://www.nature.com/articles/s41586-021-03544-w) (2021) — _nanotechnology, EE_ — _read the formulation only, not the algorithm_ | 2, 3, 6 | [L3: MDP](lectures/lecture3.md)  | [Assignment 3](assignments/assignment3.md)
 4 | 10-12 | Dynamic Programming | Policy evaluation, policy improvement, policy iteration| [The Artificial Intelligence Clinician Learns Optimal Treatment Strategies for Sepsis in Intensive Care](https://www.nature.com/articles/s41591-018-0213-5) (2018) — _healthcare_ | 3, 6 | [L4: DP](lectures/lecture4.md) | **Project proposal + mentor agreement**
-5 | 10-19 | Monte Carlo | value iteration , MC prediction, first/every visit, $q$ estimation, $\epsilon$-greedy control | [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://www.nature.com/articles/nature16961) (2016) — _games_ | 4, 6 |  |
-6 | 10-26 | Temporal Difference | TD(0), $n$-step returns, MC vs TD | [Temporal Difference Learning and TD-Gammon](https://dl.acm.org/doi/10.1145/203330.203343) (1995) — _games_ | 4, 6 |  | 
-7 | 11-02 | Q-Learning | Off-policy control, SARSA as on-policy contrast, exploration | [Improving Elevator Performance Using Reinforcement Learning](https://proceedings.neurips.cc/paper/1995/hash/390e982518a50e280d8e2b535462ec1f-Abstract.html) (1996) — _engineering_ | 4, 6 |  | **Environment spec + non-RL baseline**; lab quiz
+5 | 10-19 | DP | Policy Iteration | [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://www.nature.com/articles/nature16961) (2016) — _games_ | 3, 6 | Continue Lecture 4 | No Assignment 
+6 | 10-26 | Monte Carlo | value iteration , MC prediction, first/every visit | [Mastering the Game of Go with Deep Neural Networks and Tree Search](https://www.nature.com/articles/nature16961) (2016) — _games_ | 4, 6 | [L5: MC](lectures/lecture5.md) | [Assignment 4](assignments/assignment4.md)
+7 | 11-02 | MC & Temporal Difference | $\epsilon$-greedy MC control, TD(0), $n$-step returns, MC vs TD | [Temporal Difference Learning and TD-Gammon](https://dl.acm.org/doi/10.1145/203330.203343) (1995) — _games_ | 4, 6 |  | Lab Quiz
 8 | 11-09 | **Midterm** | | | 1, 2, 3, 4 | |
-9 | 11-16 | Function Approximation | Why tables fail, linear FA, semi-gradient methods, the deadly triad | — | 4, 5 |  | 
-10 | 11-23 | Deep Q-Networks | Neural Q-function, target network, experience replay, Atari | [Human-Level Control Through Deep Reinforcement Learning](https://www.nature.com/articles/nature14236) (2015) — _games_; [Autonomous Navigation of Stratospheric Balloons Using Reinforcement Learning](https://www.nature.com/articles/s41586-020-2939-8) (2020) — _aerospace_ | 5, 6 |  | **Working RL agent**
-11 | 11-30 | Policy Gradients | Policy parameterization, REINFORCE, baselines | [Molecular De-Novo Design Through Deep Reinforcement Learning](https://doi.org/10.1186/s13321-017-0235-x) (2017) — _bioinformatics_ | 5, 6 |  | lab quiz
-12 | 12-07 | Actor-Critic | Advantage estimation, A2C, shared networks, continuous actions | [Magnetic Control of Tokamak Plasmas Through Deep Reinforcement Learning](https://www.nature.com/articles/s41586-021-04301-9) (2022) — _physics_ | 5, 6 |  |
-13 | 12-14 | PPO and Alignment | Trust regions, PPO, RLHF, reward models, DPO | [Training Language Models to Follow Instructions with Human Feedback](https://arxiv.org/abs/2203.02155) (2022); [Direct Preference Optimization](https://arxiv.org/abs/2305.18290) (2023) — _LLMs_ | 5, 6 |  |
-14 | 12-21 | **Project Demos** | Team presentations and evaluation | — | 2, 5, 6 | | **Final report due**; demos
-15 | 12-28 | **Project Demos** | Team presentations and evaluation | — | 2, 5, 6 | | Demos
-16 | | **Final** | | | all | |
+9 | 11-16 | Q-Learning | Off-policy control, SARSA as on-policy contrast, exploration | [Improving Elevator Performance Using Reinforcement Learning](https://proceedings.neurips.cc/paper/1995/hash/390e982518a50e280d8e2b535462ec1f-Abstract.html) (1996) — _engineering_ | 4, 6 |  | **Environment spec + non-RL baseline**;
+10 | 11-23 | Function Approximation | Why tables fail, linear FA, semi-gradient methods, the deadly triad | — | 4, 5 |  | 
+11 | 11-30 | Deep Q-Networks | Neural Q-function, target network, experience replay, Atari | [Human-Level Control Through Deep Reinforcement Learning](https://www.nature.com/articles/nature14236) (2015) — _games_; [Autonomous Navigation of Stratospheric Balloons Using Reinforcement Learning](https://www.nature.com/articles/s41586-020-2939-8) (2020) — _aerospace_ | 5, 6 |  | **Working RL agent**
+12 | 12-07 | Policy Gradients | Policy parameterization, REINFORCE, baselines | [Molecular De-Novo Design Through Deep Reinforcement Learning](https://doi.org/10.1186/s13321-017-0235-x) (2017) — _bioinformatics_ | 5, 6 |  | 
+13 | 12-14 | Actor-Critic | Advantage estimation, A2C, shared networks, continuous actions | [Magnetic Control of Tokamak Plasmas Through Deep Reinforcement Learning](https://www.nature.com/articles/s41586-021-04301-9) (2022) — _physics_ | 5, 6 |  |
+14 | 12-21 | PPO and Alignment | Trust regions, PPO, RLHF, reward models, DPO | [Training Language Models to Follow Instructions with Human Feedback](https://arxiv.org/abs/2203.02155) (2022); [Direct Preference Optimization](https://arxiv.org/abs/2305.18290) (2023) — _LLMs_ | 5, 6 |  |
+15 | 12-28 | **Project Demos** | Team presentations and evaluation | — | 2, 5, 6 | | **Final report due**; demos
+16 | 12-28 | **Project Demos** | Team presentations and evaluation | — | 2, 5, 6 | | Demos
+17 | | **Final** | | | all | |
 
 
 ---
